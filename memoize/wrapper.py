@@ -17,7 +17,8 @@ from memoize.invalidation import InvalidationSupport
 from memoize.statuses import UpdateStatuses, InMemoryLocks
 
 
-def memoize(method: Optional[Callable] = None, configuration: Optional[CacheConfiguration] = None,
+def memoize(method: Optional[Callable] = None,
+            configuration: Optional[CacheConfiguration] = None,
             invalidation: Optional[InvalidationSupport] = None, update_statuses: Optional[UpdateStatuses] = None):
     """Wraps function with memoization.
 
