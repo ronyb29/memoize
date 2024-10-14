@@ -19,7 +19,8 @@ from memoize.statuses import UpdateStatuses, InMemoryLocks
 
 def memoize(method: Optional[Callable] = None,
             configuration: Optional[CacheConfiguration] = None,
-            invalidation: Optional[InvalidationSupport] = None, update_statuses: Optional[UpdateStatuses] = None):
+            invalidation: Optional[InvalidationSupport] = None,
+            update_statuses: Optional[UpdateStatuses] = None):
     """Wraps function with memoization.
 
     If entry reaches time it should be updated, refresh is performed in background,
